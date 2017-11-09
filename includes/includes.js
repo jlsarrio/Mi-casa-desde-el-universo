@@ -1,17 +1,8 @@
-var origenWeb;
-
-(function(){
-    var script = document.currentScript;
-	origenWeb = script.src;
-    origenWeb=origenWeb.substring(0, origenWeb.lastIndexOf("/"));
-    origenWeb=origenWeb.substring(0, origenWeb.lastIndexOf("/")+1);
-}())
-
 function head(){
 	respuesta='<head>';
 	respuesta+='	<meta charset="utf-8">';
 	respuesta+='	<title>Mi casa desde el universo 2</title>';
-	respuesta+='	<link rel="stylesheet" type="text/css" href="'+origenWeb+'css/estilos.css">';
+	respuesta+='	<link rel="stylesheet" type="text/css" href="../css/estilos.css">';
 	respuesta+='</head>';
 	return respuesta;
 }
@@ -19,13 +10,13 @@ function head(){
 function header(){
 	respuesta='<header id="header" class="">';
 	respuesta+='<div class="logotipo">';
-	respuesta+='	<img src="'+origenWeb+'imagenes/logo.png" width="100px" alt="">';
+	respuesta+='	<img src="../imagenes/logo.png" width="100px" alt="">';
 	respuesta+='</div>';
 	respuesta+='<nav>';
 	respuesta+='	<ul>';
-	respuesta+='		<li><a href="'+origenWeb+'index.html" title="">Inicio</a></li>';
-	respuesta+='		<li><a href="'+origenWeb+'contenido/presentacion.html" title="">Presentación</a></li>';
-	respuesta+='		<li><a href="'+origenWeb+'contenido/contenido.html" title="">Contenido</a></li>';
+	respuesta+='		<li><a href="../contenido/index.html" title="">Inicio</a></li>';
+	respuesta+='		<li><a href="../contenido/presentacion.html" title="">Presentación</a></li>';
+	respuesta+='		<li><a href="../contenido/contenido.html" title="">Contenido</a></li>';
 	respuesta+='		<li><a href="#" title="">Contacto</a></li>';
 	respuesta+='	</ul>';
 	respuesta+='</nav>';
