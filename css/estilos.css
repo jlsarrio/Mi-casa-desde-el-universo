@@ -1,0 +1,76 @@
+/* Curso Básico de CSS - 14. Layout, estructura Basica */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #e6e6e6;
+}
+
+header, .main, footer {
+	/*background: #fff;*/
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+header nav {
+	background: #528fd5;
+	overflow: hidden;    /* Oculta el contenido que no cabe en el contenedor*/
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	padding: 10px 20px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	background: #75acec;
+}
+
+.main .articles {
+	width: 68.5%;	/* hay que cambiarlo por que si nó no cabe el margen deercho*/
+	margin-right: 1.5%;
+	float: left;
+}
+
+.main .articles article{
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+
+aside {
+	width: 30%;
+	background: #ff8000;
+	float:left;	/* si no se pone esta opción, pasa a la arte inferior*/
+	padding: 20px;
+		box-sizing: border-box;
+}
+
+footer {
+	background: #000;
+	color: #fff;
+	clear: both;	/* Borra el rastro de los float:left; anteriores*/
+	padding: 10px 0px;
+	text-align: center;
+}
+
+h2 a{
+	/*padding: 10px 20px;*/
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
