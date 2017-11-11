@@ -40,8 +40,8 @@ header nav ul li a:hover {
 	background: #75acec;
 }
 
-.main .articles {
-	width: 68.5%;	/* hay que cambiarlo por que si nó no cabe el margen deercho*/
+.main .articles_ {
+	width: 68.5%;	/* hay que cambiarlo por que si nó no cabe el margen derecho*/
 	margin-right: 1.5%;
 	float: left;
 }
@@ -53,9 +53,9 @@ header nav ul li a:hover {
 }
 
 aside {
-	width: 30%;
+	/*width: 30%;*/
 	background: #ff8000;
-	float:left;	/* si no se pone esta opción, pasa a la arte inferior*/
+	/*float:left;*/	/* si no se pone esta opción, pasa a la arte inferior*/
 	padding: 20px;
 	box-sizing: border-box;
 	min-height: 300px;
@@ -80,4 +80,19 @@ h2 a{
 	text-indent: 40px;
 	text-align: justify;
 	margin: 10px;
+}
+
+/*@media screen and (min-width: 480px){*/
+/*@media screen and (min-width: 767px){*/
+@media screen and (min-width: 950px){
+	aside {
+		width: 30%;
+		float:left;	/* si no se pone esta opción, pasa a la arte inferior*/
+	}
+	.main .articles {
+		width: 68.5%;	/* hay que cambiarlo por que si nó no cabe el margen derecho*/
+		margin-right: 1.5%;
+		float: left;
+	}
+
 }
