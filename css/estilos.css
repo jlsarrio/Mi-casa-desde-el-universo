@@ -35,7 +35,7 @@ header nav ul li a {
 	display: block;
 	color: #fff;
 	text-decoration: none;
-	font-size: 200%;
+	/*font-size: 200%;*/
 }
 
 header nav ul li a:hover {
